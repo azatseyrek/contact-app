@@ -4,6 +4,10 @@ export const contactAdaptor = createEntityAdapter();
 
 const initialState = contactAdaptor.getInitialState();
 
+export const contactSelector = contactAdaptor.getSelectors(
+  (state) => state.contacts
+);
+
 const contactSlice = createSlice({
   name: "contacts",
   initialState, //initialState = initialState yazmak yerine sadece initialState yazilabilinir.
