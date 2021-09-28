@@ -45,7 +45,7 @@ const Form = () => {
           />
         </div>
 
-        <div className='btn'>
+        <div className="btn">
           <button type="submit">Add</button>
         </div>
       </form>

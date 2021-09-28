@@ -1,44 +1,88 @@
 .App {
   display: flex;
   justify-content: center;
-  align-items: center;
-
+  background-image: url("https://www.pngkey.com/png/full/111-1116841_contact-info-contact-us-background.png");
+  background-size: contain;
+  margin: 0;
+  padding: 0;
+  height: 750px;
 }
 
 input {
   width: 300px;
   padding: 5px;
   margin: 2px;
-  border: 1px solid ;
-  border-radius:  10px;
-  
+  border: 1px solid;
+  border-radius: 10px;
 }
 
 button {
-  width: 90px;
-  border: solid 2px;
-  border-radius: 10px;
+  width: 60px;
+  height: 30px;
+  border: lightslategrey 1px solid;
 
+  border-radius: 5px;
 
-display: block;
-margin: 2px;
-padding: 5px;
-margin-left: 2;
+  display: block;
+  margin: 2px;
+  padding: 5px;
+  margin-left: 2;
 }
-.btn {
 
+button:hover {
+  border: darkgray 2px solid;
+  cursor: pointer;
+
+}
+
+.btn {
   justify-content: center;
   display: flex;
+  padding-top: 2px;
 }
-
-.phone_number {
-  float: right;
-}
-
 
 h2 {
   display: flex;
- align-items: center; 
- justify-content: center;
- color: rgb(66, 22, 22);
+  align-items: center;
+  justify-content: center;
+  color: rgb(124, 117, 117);
+}
+
+.deleteBtn {
+  width: 16px;
+  height: 16px;
+
+  color: rgb(233, 27, 27);
+  text-align: center;
+  font-size: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.items_list {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  font-family: monospace;
+  background-color: rgb(221, 214, 221);
+  margin: 5px;
+  border-radius: 7px;
+}
+.phone_number span {
+  color: rgb(15, 165, 211);
+}
+
+.clear_all {
+  font-size: 10px;
+  color: rgb(156, 18, 18);
+  width: 100px;
+  float: right;
+  cursor: pointer;
+  width: auto;
+  margin: 2px;
+  padding: 5px;
+}
+
+.clear_all:hover {
+  text-decoration: underline;
 }
