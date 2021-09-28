@@ -30,7 +30,6 @@ const List = () => {
 
       {total>1 ? <div onClick={handleDeleteAll} className="clear_all">Delete All</div> : <div></div>  }
 
-      
     </div>
   );
 };

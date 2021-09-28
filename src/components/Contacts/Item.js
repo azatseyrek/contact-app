@@ -9,11 +9,11 @@ const Item = ({ item }) => {
     if (window.confirm("Are you sure?")) {
       dispatch(deleteContact(id));
     }
-  }; 
+  };
 
   return (
     <div className="items_list">
-      <div>
+      <div className="itemName">
         <span>{item.name}</span>
       </div>
 
@@ -21,8 +21,17 @@ const Item = ({ item }) => {
         <span>{item.phone_number}</span>
       </div>
 
+      <div className="editBtn">
+        <span>
+
+        <i class="far fa-edit"></i>
+        </span>
+      </div>
+
       <div className="deleteBtn">
-        <span onClick={() => handleDelete(item.id)}>x</span>
+        <span onClick={() => handleDelete(item.id)}>
+          <i class="far fa-trash-alt"></i>
+        </span>
       </div>
     </div>
   );
