@@ -31,14 +31,14 @@ const Form = () => {
     <div>
       <form onSubmit={handleSubmit}>
         <div className="userbox">
-          <input
+          <input className='mainLoginInput'
             placeholder="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
         </div>
         <div className="userbox">
-          <input
+          <input className='mainLoginInput'
             placeholder="phone number"
             value={number}
             onChange={(e) => setNumber(e.target.value)}

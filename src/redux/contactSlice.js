@@ -16,11 +16,12 @@ const contactSlice = createSlice({
     addContacts: contactAdaptor.addMany,
     deleteContact: contactAdaptor.removeOne,
     removeAllContacts: contactAdaptor.removeAll,
+    editContact: contactAdaptor.updateOne,
   },
 });
 
 export default contactSlice.reducer;
 
-export const { addContact, addContacts, deleteContact, removeAllContacts } = contactSlice.actions;
+export const { addContact, addContacts, deleteContact, removeAllContacts, editContact } = contactSlice.actions;
 
 //redux icerisindeki data normalized yapisi kullanilacak farkli olarak

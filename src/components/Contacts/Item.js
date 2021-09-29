@@ -1,6 +1,8 @@
 import React from "react";
 import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 import { deleteContact } from "../../redux/contactSlice";
+
 
 const Item = ({ item }) => {
   const dispatch = useDispatch();
@@ -24,13 +26,13 @@ const Item = ({ item }) => {
       <div className="editBtn">
         <span>
 
-        <i class="far fa-edit"></i>
+        <Link to={`edit/${item.id}`} className="editBtn"><i className="far fa-edit"></i></Link>
         </span>
       </div>
 
       <div className="deleteBtn">
         <span onClick={() => handleDelete(item.id)}>
-          <i class="far fa-trash-alt"></i>
+          <i className="far fa-trash-alt"></i>
         </span>
       </div>
     </div>
